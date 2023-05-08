@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chi_Tiet">
+
+    <TextView
+        android:id="@+id/textView_in4"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:fontFamily="@font/times"
+        android:scaleType="fitCenter"
+        android:text="Thông tin chi tiết"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageButton
+        android:id="@+id/bt_back_in4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_in4"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/bt_backspace" />
+
+    <EditText
+        android:id="@+id/text_ten_in4"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/input"
+        android:fontFamily="@font/times"
+        android:hint="Tên vị trí"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitCenter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_in4" />
+
+    <EditText
+        android:id="@+id/text_moTa_in4"
+        android:layout_width="258dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/input"
+        android:fontFamily="@font/times"
+        android:hint="Mô tả"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitCenter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ten_in4" />
+
+    <Button
+        android:id="@+id/bt_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/times"
+        android:text="Xem trên bản đồ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_moTa_in4"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/times"
+        android:text="Cập nhật"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_moTa_in4"
+        app:layout_constraintVertical_bias="0.669" />
+</androidx.constraintlayout.widget.ConstraintLayout>

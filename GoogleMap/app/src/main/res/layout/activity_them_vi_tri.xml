@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Them_vi_tri">
+
+    <TextView
+        android:id="@+id/textView_save"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:fontFamily="@font/times"
+        android:scaleType="fitCenter"
+        android:text="Thêm vị trí hiện tại"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <ImageButton
+        android:id="@+id/back_save"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_save"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/bt_backspace" />
+
+    <EditText
+        android:id="@+id/text_ten_save"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/input"
+        android:fontFamily="@font/times"
+        android:hint="Tên vị trí"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitCenter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_save" />
+
+    <EditText
+        android:id="@+id/text_moTa_save"
+        android:layout_width="258dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/input"
+        android:fontFamily="@font/times"
+        android:hint="Mô tả"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:scaleType="fitCenter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ten_save" />
+
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/times"
+        android:text="Lưu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_moTa_save"
+        app:layout_constraintVertical_bias="0.593" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
